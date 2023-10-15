@@ -22,7 +22,7 @@ const Home = () => {
       >
         <Heading mb={6}>Log in</Heading>
         <Input
-          placeHolder="Your email"
+          placeholder="Your email"
           variant={"flushed"}
           mb={3}
           type={"email"}
@@ -51,7 +51,7 @@ const Home = () => {
           }
         </Box>
       </Flex>
-      <Grid></Grid>
+      {/* hello world */}
     </Flex>
   );
 };
