@@ -1,4 +1,4 @@
-import { Flex, Heading, Input, Button, Box, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { Flex, Heading, Input, Button, Box, useColorMode, useColorModeValue, Grid } from "@chakra-ui/react";
 import { useState } from "react";
 import { IoSunny, IoMoon } from 'react-icons/io5'
 
@@ -16,6 +16,7 @@ const Home = () => {
         direction={"column"}
         background={formBackGround}
         p={12}
+    
         rounded={6}
         position={"relative"}
       >
@@ -27,7 +28,8 @@ const Home = () => {
           type={"email"}
         ></Input>
         <Input
-          placeHolder="Your password"
+          
+          placeholder="Your password"
           variant={"flushed"}
           mb={6}
           type={"password"}
@@ -38,7 +40,7 @@ const Home = () => {
           position={"absolute"}
           top={2}
           right={2}
-          courser={"pointer"}
+          cursor={"pointer"}
           onClick={() => {
             toggleColorMode()
             setToggle(!toggle)
@@ -49,6 +51,7 @@ const Home = () => {
           }
         </Box>
       </Flex>
+      <Grid></Grid>
     </Flex>
   );
 };
